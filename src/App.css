@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+/* Cover image added in background */
+html {
+  background: url(./Images/Medical-bg.avif) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/* Login page */
+.LoginParent {
+  background-color: white;
+  border-radius: 20px;
+  width: 400px;
+  height: 250px;
+  margin-left: calc(50% - 200px);
+  margin-top: 150px;
+  text-align: center;
+  padding-top: 2.5px;
+}
+
+/* Form headings (Name, Age, File) */
+.Title {
+  display: inline;
+  font-weight: 600;
+  position: absolute;
+  left: calc(50% - 90px);
+}
+
+/* File that is selected */
+.LoginParent p {
+  font-size: 11px;
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: -5px;
+
+  position: relative;
+  left: 197px;
+}
+
+/* Common for all input fields */
+.LoginParent input {
+  margin-bottom: 15px;
+}
+
+/*  Name input field */
+.NameInput {
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  position: relative;
+  right: -35px;
+  width: 100px;
+}
+
+/* Age input field */
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1;
+}
+
+.AgeInput {
+  border: 1px solid gray;
+  border-radius: 5px;
+
+  position: relative;
+  right: -65px;
+  width: 40px;
+  text-align: center;
+}
+
+/* File input field */
+input[type=file]::file-selector-button {
+  background-color: #ffffff;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+input[type=file]::file-selector-button:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+.FileInput {
+  position: relative;
+  right: -50px;
+  width: 82px;
+  text-align: center;
+}
+
+/* Submit button */
+.submitBtn {
+  width: 80px;
+  height: 25px;
+  background-color: #ffffff;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.submitBtn:hover {
+  background-color: rgb(234, 234, 234);
+}
+
+
+/* Media query to resize if width is less than 400px */
+
+/* This is done to fit in all phone screen sizes
+ Minimum width of a phone is 320px */
+@media (max-width: 450px) {
+  .LoginParent {
+    width: 300px;
+    margin-left: calc(50% - 150px);
+  }
+
+  .LoginParent p {
+    position: relative;
+    left: 147px;
+  }
+}
