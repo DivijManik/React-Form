@@ -1,10 +1,10 @@
 # React Form - Contains
 
-Name - Input field 
-Age - Input field
-Choose File - Input field
+- Name (Input field)
+- Age (Input field)
+- Choose File (Input field)
 
-Submit - Button
+- Submit (Button)
 
 # Demo - Video Demonstration
 
